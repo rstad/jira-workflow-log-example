@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE workflow PUBLIC "-//OpenSymphony Group//DTD OSWorkflow 2.8//EN" "http://www.opensymphony.com/osworkflow/workflow_2_8.dtd">
 <workflow>
-  <meta name="jira.description">for the hub</meta>
+  <meta name="jira.description">modified for the hub</meta>
   <meta name="jira.update.author.key">admin</meta>
-  <meta name="jira.updated.date">1586473929913</meta>
+  <meta name="jira.updated.date">1586484601452</meta>
   <initial-actions>
     <action id="1" name="Create">
       <validators>
