@@ -3,7 +3,7 @@
 <workflow>
   <meta name="jira.description">modified for the hub</meta>
   <meta name="jira.update.author.key">admin</meta>
-  <meta name="jira.updated.date">1586484601452</meta>
+  <meta name="jira.updated.date">1586486208773</meta>
   <initial-actions>
     <action id="1" name="Create">
       <validators>
@@ -209,6 +209,35 @@
     </step>
     <step id="5" name="Shipped">
       <meta name="jira.status.id">10004</meta>
+      <actions>
+        <action id="111" name="Bug Found">
+          <meta name="jira.description"></meta>
+          <meta name="jira.fieldscreen.id"></meta>
+          <results>
+            <unconditional-result old-status="null" status="null" step="5">
+              <post-functions>
+                <function type="class">
+                  <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                </function>
+                <function type="class">
+                  <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                </function>
+                <function type="class">
+                  <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                </function>
+                <function type="class">
+                  <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                </function>
+                <function type="class">
+                  <arg name="eventTypeId">10000</arg>
+                  <arg name="full.module.key">com.atlassian.jira.plugin.system.workflowfireevent-function</arg>
+                  <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                </function>
+              </post-functions>
+            </unconditional-result>
+          </results>
+        </action>
+      </actions>
     </step>
   </steps>
 </workflow>
