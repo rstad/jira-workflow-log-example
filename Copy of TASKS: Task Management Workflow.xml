@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE workflow PUBLIC "-//OpenSymphony Group//DTD OSWorkflow 2.8//EN" "http://www.opensymphony.com/osworkflow/workflow_2_8.dtd">
 <workflow>
-  <meta name="jira.description">Task Management workflow</meta>
+  <meta name="jira.description"></meta>
   <meta name="jira.update.author.key">admin</meta>
-  <meta name="jira.updated.date">1588461210408</meta>
+  <meta name="jira.updated.date">1588461210240</meta>
   <initial-actions>
     <action id="1" name="Create">
       <meta name="jira.i18n.submit">common.forms.create</meta>
@@ -35,7 +35,6 @@
   <steps>
     <step id="1" name="To Do">
       <meta name="jira.status.id">10000</meta>
-      <meta name="newpropertykey">newpropertykeyvalue</meta>
       <actions>
         <action id="21" name="Done">
           <meta name="jira.i18n.submit">jira.issuetracking.simple.workflow.action.done.name</meta>
