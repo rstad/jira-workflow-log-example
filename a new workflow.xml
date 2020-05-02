@@ -3,7 +3,7 @@
 <workflow>
   <meta name="jira.description">just want to see if this is going to show up</meta>
   <meta name="jira.update.author.key">admin</meta>
-  <meta name="jira.updated.date">1588461528952</meta>
+  <meta name="jira.updated.date">1588462129380</meta>
   <initial-actions>
     <action id="1" name="Create">
       <validators>
@@ -33,12 +33,6 @@
   <steps>
     <step id="1" name="Open">
       <meta name="jira.status.id">1</meta>
-    </step>
-    <step id="2" name="new step">
-      <meta name="jira.status.id">3</meta>
-    </step>
-    <step id="3" name="another step">
-      <meta name="jira.status.id">4</meta>
     </step>
   </steps>
 </workflow>

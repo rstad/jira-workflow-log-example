@@ -3,7 +3,7 @@
 <workflow>
   <meta name="jira.description">modified for the hub</meta>
   <meta name="jira.update.author.key">admin</meta>
-  <meta name="jira.updated.date">1586486208773</meta>
+  <meta name="jira.updated.date">1588462148881</meta>
   <initial-actions>
     <action id="1" name="Create">
       <validators>
@@ -33,6 +33,7 @@
   <steps>
     <step id="1" name="Open">
       <meta name="jira.status.id">1</meta>
+      <meta name="test">test</meta>
       <actions>
         <action id="41" name="In Progress">
           <meta name="jira.description"></meta>
